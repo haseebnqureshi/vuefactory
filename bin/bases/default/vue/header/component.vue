@@ -2,7 +2,7 @@
 <template lang="pug">
 
 div.bordered
-	h1 {{brand}}
+	h1 {{brand}} (Header)
 	<%= html %>
 </template>
 

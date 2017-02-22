@@ -2,7 +2,7 @@
 <template lang="pug">
 
 div.bordered
-	h2 {{brand}}
+	h2 {{brand}} (Footer)
 	<%= html %>
 </template>
 
@@ -27,7 +27,6 @@ module.exports = {
 	border: dashed 1px gray;
 	padding: 20px;
 	margin: 10px;
-	background: #acacac;
 }
 
 </style>
