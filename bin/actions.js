@@ -60,12 +60,11 @@ module.exports = {
 
 		//if we need to render anything to our home module, handle it
 		if (data.home) {
-			this.renderExtraOntoHome(to, data.home);
+			this.renderExtraOntoHome(`${to}/home/component.vue`, data.home);
 		}
 	},
 
-	renderExtraOntoHome: function(to, data) {
-		var filepath = `${to}/home/component.vue`;
+	renderExtraOntoHome: function(filepath, data) {
 
 		//to correctly render tags in .vue files, we're using <%= %> instead of {{ }}
 		var template = fs.readFileSync(filepath, 'utf8');
