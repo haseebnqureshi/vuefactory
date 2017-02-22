@@ -4,5 +4,9 @@
 	"configuring": "{{{configuring}}}",
 	"stores": "{{{stores}}}",
 	"routes": "routes = _.union(routes, register.routes);\n{{{routes}}}",
-	"middlewares": "middlewares = _.union(middlewares, register.middlewares);\n{{{middlewares}}}"
+	"middlewares": "middlewares = _.union(middlewares, register.middlewares);\n{{{middlewares}}}",
+	"home": {
+		"html": "Register\n	<%= html %>",
+		"components": "Register: require('../register'),\n<%= components %>"
+	}
 }

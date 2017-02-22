@@ -4,7 +4,7 @@
 div.bordered
 	h2 {{welcome}}
 	p {{message}}
-
+	<%= html %>
 </template>
 
 <script>
@@ -15,6 +15,9 @@ module.exports = {
 			welcome: `Hello!`,
 			message: `Welcome to our home component.`
 		}
+	},
+	components: {
+		<%= components %>
 	}
 }
 

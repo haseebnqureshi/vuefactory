@@ -56,7 +56,23 @@ module.exports = {
 		//adding our necessary main entry file hooks for our extra
 		var filepath = `${to}/main.js`;
 		var data = require(`${to}/${name}/install.json`);
-		return this.render(filepath, data);
+		this.render(filepath, data);
+
+		//if we need to render anything to our home module, handle it
+		if (data.home) {
+			this.renderExtraOntoHome(to, data.home);
+		}
+	},
+
+	renderExtraOntoHome: function(to, data) {
+		var filepath = `${to}/home/component.vue`;
+
+		//to correctly render tags in .vue files, we're using <%= %> instead of {{ }}
+		var template = fs.readFileSync(filepath, 'utf8');
+		var data = data || { html: '', components: '' };
+		var compiled = _.template(template);
+		var rendered = compiled(data);
+		return fs.writeFileSync(filepath, rendered, 'utf8');
 	}
 
 };

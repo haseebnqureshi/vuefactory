@@ -4,5 +4,9 @@
 	"configuring": "{{{configuring}}}",
 	"stores": "{{{stores}}}",
 	"routes": "routes = _.union(routes, login.routes);\n{{{routes}}}",
-	"middlewares": "middlewares = _.union(middlewares, login.middlewares);\n{{{middlewares}}}"
+	"middlewares": "middlewares = _.union(middlewares, login.middlewares);\n{{{middlewares}}}",
+	"home": {
+		"html": "Login\n	<%= html %>",
+		"components": "Login: require('../login'),\n<%= components %>"
+	}
 }

@@ -99,6 +99,9 @@ inquirer.prompt(questions).then((answers) => {
 	// we render our entry main file, just in case there's still any mustache templating
 	actions.render(path.resolve(process.env.PWD, 'vue', 'main.js'), {});
 
+	// and to that point, handle any potential unrendered home/component.vue vars
+	actions.renderExtraOntoHome(path.resolve(process.env.PWD, 'vue'));
+
 	// finally we top things off with a npm install
 	actions.npmInstall(process.env.PWD);
 
