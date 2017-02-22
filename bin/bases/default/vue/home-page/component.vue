@@ -2,13 +2,13 @@
 <template lang="pug">
 
 div.bordered
-	Header
+	AppHeader
 
 	h2 {{welcome}}
 	p {{message}}
 	<%= html %>
 
-	Footer
+	AppFooter
 </template>
 
 <script>
@@ -21,8 +21,8 @@ module.exports = {
 		}
 	},
 	components: {
-		Header: require('../header/component.vue'),
-		Footer: require('../footer/component.vue'),
+		AppHeader: require('../header/component.vue'),
+		AppFooter: require('../footer/component.vue'),
 		<%= components %>
 	}
 }

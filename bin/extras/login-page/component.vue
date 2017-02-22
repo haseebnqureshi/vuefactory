@@ -2,12 +2,12 @@
 <template lang="pug">
 
 div.bordered
-	Header
+	AppHeader
 
 	h2 User Login
 	Login
 
-	Footer
+	AppFooter
 </template>
 
 <script>
@@ -19,8 +19,8 @@ module.exports = {
 		}
 	},
 	components: {
-		Header: require('../header/component.vue'),
-		Footer: require('../footer/component.vue'),
+		AppHeader: require('../header/component.vue'),
+		AppFooter: require('../footer/component.vue'),
 		Login: require('../login/component.vue')
 	}
 }
