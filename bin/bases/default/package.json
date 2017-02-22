@@ -1,0 +1,32 @@
+{
+  "name": "vuefactory-default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Haseeb Qureshi",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^14.0.0",
+    "express": "^4.14.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "vinyl-source-stream": "^1.1.0",
+    "vue": "^2.1.10",
+    "vue-resource": "^1.2.0",
+    "vue-router": "^2.2.0",
+    "vueify": "^9.4.0",
+    "vuex": "^2.1.2"
+  },
+  "browser": {
+    "vue": "vue/dist/vue.common"
+  }
+}

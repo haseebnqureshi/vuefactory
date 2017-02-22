@@ -1,0 +1,33 @@
+{
+  "name": "vuefactory",
+  "version": "0.1.0",
+  "description": "REPL for cranking out Vue apps.",
+  "main": "bin/index.js",
+  "bin": {
+    "vuefactory": "bin/index.js"
+  },
+  "dependencies": {},
+  "keywords": [
+    "repl",
+    "vue",
+    "apps",
+    "cli"
+  ],
+  "devDependencies": {
+    "chalk": "^1.1.3",
+    "inquirer": "^3.0.1",
+    "underscore": "^1.8.3",
+    "mustache": "^2.3.0"
+  },
+  "scripts": {},  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haseebnqureshi/vuefactory.git"
+  },
+  "author": "Haseeb Qureshi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haseebnqureshi/vuefactory/issues"
+  },
+  "homepage": "https://github.com/haseebnqureshi/vuefactory#readme"
+}
