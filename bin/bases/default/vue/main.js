@@ -11,6 +11,8 @@ var VueResource = require('vue-resource');
 var Vuex = require('vuex');
 var _ = require('underscore');
 var home = require('./home');
+var header = require('./header');
+var footer = require('./footer');
 {{{deps}}}
 
 // configuring

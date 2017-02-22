@@ -2,13 +2,8 @@
 <template lang="pug">
 
 div.bordered
-	Header
-
-	h2 {{welcome}}
-	p {{message}}
+	h1 {{brand}}
 	<%= html %>
-
-	Footer
 </template>
 
 <script>
@@ -16,13 +11,10 @@ div.bordered
 module.exports = {
 	data() {
 		return {
-			welcome: `Hello!`,
-			message: `Welcome to our home component.`
+			brand: `VueFactory`
 		}
 	},
 	components: {
-		Header: require('../header/component.vue'),
-		Footer: require('../footer/component.vue'),
 		<%= components %>
 	}
 }
