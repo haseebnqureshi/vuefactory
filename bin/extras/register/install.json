@@ -7,6 +7,6 @@
 	"middlewares": "middlewares = _.union(middlewares, register.middlewares);\n{{{middlewares}}}",
 	"home": {
 		"html": "Register\n\t<%= html %>",
-		"components": "Register: require('../register'),\n<%= components %>"
+		"components": "Register: require('../register/component.vue'),\n\t\t<%= components %>"
 	}
 }

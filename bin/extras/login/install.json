@@ -7,6 +7,6 @@
 	"middlewares": "middlewares = _.union(middlewares, login.middlewares);\n{{{middlewares}}}",
 	"home": {
 		"html": "Login\n\t<%= html %>",
-		"components": "Login: require('../login'),\n<%= components %>"
+		"components": "Login: require('../login/component.vue'),\n\t\t<%= components %>"
 	}
 }
