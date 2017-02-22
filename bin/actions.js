@@ -73,7 +73,7 @@ module.exports = {
 
 	},
 
-	renderExtraOnto: function(name, filepath, data) {
+	renderExtraOnto: function(filepath, data) {
 
 		//to correctly render tags in .vue files, we're using <%= %> instead of {{ }}
 		var template = fs.readFileSync(filepath, 'utf8');
