@@ -22,7 +22,7 @@
   "scripts": {},  
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haseebnqureshi/vuefactory.git"
+    "url": "https://github.com/haseebnqureshi/vuefactory"
   },
   "author": "Haseeb Qureshi",
   "license": "MIT",
