@@ -60,11 +60,20 @@ module.exports = {
 
 		//if we need to render anything to our home module, handle it
 		if (data.home) {
-			this.renderExtraOntoHome(`${to}/home/component.vue`, data.home);
+			this.renderExtraOnto(`${to}/home/component.vue`, data.home);
 		}
+
+		//or for our header and footer
+		if (data.header) {
+			this.renderExtraOnto(`${to}/header/component.vue`, data.header);
+		}
+		if (data.footer) {
+			this.renderExtraOnto(`${to}/footer/component.vue`, data.footer);
+		}
+
 	},
 
-	renderExtraOntoHome: function(filepath, data) {
+	renderExtraOnto: function(name, filepath, data) {
 
 		//to correctly render tags in .vue files, we're using <%= %> instead of {{ }}
 		var template = fs.readFileSync(filepath, 'utf8');
