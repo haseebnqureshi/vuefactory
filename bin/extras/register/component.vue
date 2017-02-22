@@ -36,7 +36,7 @@ module.exports = {
 	methods: {
 		register() {
 			this.actions.emailsent = true;
-			$.ajax({
+			lib.$.ajax({
 				url: lib.config.API_ENDPOINT + '/register/user',
 				type: 'post',
 				data: {

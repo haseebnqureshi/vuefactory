@@ -42,7 +42,7 @@ module.exports = {
 	},
 	methods: {
 		login() {
-			$.ajax({
+			lib.$.ajax({
 				url: lib.config.API_ENDPOINT + '/login/user',
 				type: 'post',
 				data: {
@@ -60,7 +60,7 @@ module.exports = {
 		},
 		forgot() {
 			this.actions.forgot = true;
-			$.ajax({
+			lib.$.ajax({
 				url: lib.config.API_ENDPOINT + '/forgot/user',
 				type: 'post',
 				data: {
