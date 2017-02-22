@@ -6,7 +6,7 @@
 	"routes": "routes = _.union(routes, login.routes);\n{{{routes}}}",
 	"middlewares": "middlewares = _.union(middlewares, login.middlewares);\n{{{middlewares}}}",
 	"home": {
-		"html": "Login\n	<%= html %>",
+		"html": "Login\n\t<%= html %>",
 		"components": "Login: require('../login'),\n<%= components %>"
 	}
 }

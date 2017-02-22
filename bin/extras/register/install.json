@@ -6,7 +6,7 @@
 	"routes": "routes = _.union(routes, register.routes);\n{{{routes}}}",
 	"middlewares": "middlewares = _.union(middlewares, register.middlewares);\n{{{middlewares}}}",
 	"home": {
-		"html": "Register\n	<%= html %>",
+		"html": "Register\n\t<%= html %>",
 		"components": "Register: require('../register'),\n<%= components %>"
 	}
 }
