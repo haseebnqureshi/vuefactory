@@ -20,6 +20,8 @@ div.bordered
 
 <script>
 
+var lib = require('../lib');
+
 module.exports = {
 	data() {
 		return {
@@ -42,29 +44,37 @@ module.exports = {
 	},
 	methods: {
 		login() {
-			// var url = config.api.endpoint('/login/user');
-			// var body = {
-			// 	username: this.user.username,
-			// 	password: this.user.password
-			// };
-			// this.$http.post(url, body).then(res => {
-			// 	cookies.save('vuefactory_user_access_token', res.body.data.accessToken);
-			// 	this.$router.push({ name: 'user' });
-			// }, res => {
+			$.ajax({
+				url: lib.config.API_ENDPOINT + '/login/user',
+				type: 'post',
+				data: {
+					username: this.user.username,
+					password: this.user.password
+				},
+				success: res => {
+					cookies.set(lib.config.USER_AUTH_API_TOKEN, res.data.accessToken);
+					this.$router.push({ name: 'user' });
+				},
+				error: xhr => {
 
-			// })
+				}
+			});
 		},
 		forgot() {
 			this.actions.forgot = true;
-			// var url = config.api.endpoint('/forgot/user');
-			// var body = {
-			// 	username: this.user.username
-			// };
-			// this.$http.post(url, body).then(res => {
-			// 	this.actions.forgot = true;
-			// }, res => {
+			$.ajax({
+				url: lib.config.API_ENDPOINT + '/forgot/user',
+				type: 'post',
+				data: {
+					username: this.user.username
+				},
+				success: res => {
+					this.actions.forgot = true;
+				},
+				error: xhr => {
 
-			// })
+				}
+			});
 		},
 		ready() {
 			this.actions.forgot = false;

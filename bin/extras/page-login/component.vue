@@ -36,7 +36,7 @@ module.exports = {
 	},
 	components: {
 		Header: require('../header/component.vue'),
-		Footer: require('../footer/component.vue')
+		Footer: require('../footer/component.vue'),
 	},
 	computed: {
 		formValidated() {

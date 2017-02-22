@@ -36,17 +36,21 @@ module.exports = {
 	methods: {
 		register() {
 			this.actions.emailsent = true;
-			// var url = config.api.endpoint('/register/user');
-			// var body = {
-			// 	username: this.user.username,
-			// 	email: this.user.email
-			// };
-			// this.$http.post(url, body).then(res => {
-			// 	console.log(res.body);
-			// 	this.actions.emailsent = true;
-			// }, res => {
+			$.ajax({
+				url: lib.config.API_ENDPOINT + '/register/user',
+				type: 'post',
+				data: {
+					username: this.user.username,
+					email: this.user.email
+				},
+				success: res => {
+					console.log(res)
+					this.actions.emailsent = true;
+				},
+				error: xhr => {
 
-			// })
+				}
+			});
 		}
 	}
 }
