@@ -1,0 +1,8 @@
+{
+	"config": "{{{config}}}",
+	"deps": "var pageRegister = require('./page-register');\n{{{deps}}}",
+	"configuring": "{{{configuring}}}",
+	"stores": "{{{stores}}}",
+	"routes": "routes = _.union(routes, pageRegister.routes);\n{{{routes}}}",
+	"middlewares": "middlewares = _.union(middlewares, pageRegister.middlewares);\n{{{middlewares}}}"
+}

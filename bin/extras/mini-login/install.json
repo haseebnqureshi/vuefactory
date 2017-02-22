@@ -1,0 +1,12 @@
+{
+	"config": "{{{config}}}",
+	"deps": "var miniLogin = require('./mini-login');\n{{{deps}}}",
+	"configuring": "{{{configuring}}}",
+	"stores": "{{{stores}}}",
+	"routes": "{{{routes}}}",
+	"middlewares": "{{{middlewares}}}",
+	"header": {
+		"html": "MiniLogin\n\t<%= html %>",
+		"components": "MiniLogin: require('../mini-login/component.vue'),\n\t\t<%= components %>"
+	}
+}

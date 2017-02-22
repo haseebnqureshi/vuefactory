@@ -2,7 +2,8 @@
 <template lang="pug">
 
 div.bordered
-	h3 User Register
+	p
+		strong Register
 	div(v-show="!actions.emailsent")
 		input(type="text", v-model="user.username", placeholder="username")
 		input(type="email", v-model="user.email", placeholder="email")

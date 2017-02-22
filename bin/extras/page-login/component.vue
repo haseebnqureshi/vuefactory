@@ -2,6 +2,8 @@
 <template lang="pug">
 
 div.bordered
+	Header
+
 	h3 User Login
 	div(v-show="!actions.forgot")
 		input(type="text", v-model="user.username", placeholder="username")
@@ -15,6 +17,7 @@ div.bordered
 				span
 					a(@click="ready") Login when you're ready.
 
+	Footer
 </template>
 
 <script>
@@ -30,6 +33,10 @@ module.exports = {
 				password: ''
 			}
 		}
+	},
+	components: {
+		Header: require('../header/component.vue'),
+		Footer: require('../footer/component.vue')
 	},
 	computed: {
 		formValidated() {

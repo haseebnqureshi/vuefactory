@@ -20,7 +20,7 @@ Vue Routes
 var routes = module.exports.routes = [];
 routes.push({
 	path: '/login',
-	name: 'login',
+	name: 'pageLogin',
 	component: require('./component.vue')
 });
 
