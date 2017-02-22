@@ -5,7 +5,7 @@ div.bordered
 	Header
 
 	h2 User Register
-	MiniRegister
+	Register
 
 	Footer
 </template>
@@ -21,7 +21,7 @@ module.exports = {
 	components: {
 		Header: require('../header/component.vue'),
 		Footer: require('../footer/component.vue'),
-		MiniRegister: require('../mini-register/component.vue')
+		Register: require('../register/component.vue')
 	}
 }
 

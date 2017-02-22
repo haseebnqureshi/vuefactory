@@ -19,8 +19,8 @@ Vue Routes
 
 var routes = module.exports.routes = [];
 routes.push({
-	path: '/',
-	name: 'home',
+	path: '/register',
+	name: 'registerPage',
 	component: require('./component.vue')
 });
 

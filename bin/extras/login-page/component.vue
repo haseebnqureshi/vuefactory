@@ -5,7 +5,7 @@ div.bordered
 	Header
 
 	h2 User Login
-	MiniLogin
+	Login
 
 	Footer
 </template>
@@ -21,7 +21,7 @@ module.exports = {
 	components: {
 		Header: require('../header/component.vue'),
 		Footer: require('../footer/component.vue'),
-		MiniLogin: require('../mini-login/component.vue')
+		Login: require('../login/component.vue')
 	}
 }
 

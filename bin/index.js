@@ -100,7 +100,7 @@ inquirer.prompt(questions).then((answers) => {
 	actions.render(path.resolve(process.env.PWD, 'vue', 'main.js'), {});
 
 	// and to that point, handle any potential unrendered home/component.vue vars
-	actions.renderExtraOnto(path.resolve(process.env.PWD, 'vue', 'home', 'component.vue'));
+	actions.renderExtraOnto(path.resolve(process.env.PWD, 'vue', 'home-page', 'component.vue'));
 	actions.renderExtraOnto(path.resolve(process.env.PWD, 'vue', 'header', 'component.vue'));
 	actions.renderExtraOnto(path.resolve(process.env.PWD, 'vue', 'footer', 'component.vue'));
 

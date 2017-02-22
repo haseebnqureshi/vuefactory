@@ -60,7 +60,7 @@ module.exports = {
 
 		//if we need to render anything to our home module, handle it
 		if (data.home) {
-			this.renderExtraOnto(`${to}/home/component.vue`, data.home);
+			this.renderExtraOnto(`${to}/home-page/component.vue`, data.home);
 		}
 
 		//or for our header and footer

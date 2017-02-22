@@ -1,0 +1,12 @@
+{
+	"config": "{{{config}}}",
+	"deps": "var login = require('./login');\n{{{deps}}}",
+	"configuring": "{{{configuring}}}",
+	"stores": "{{{stores}}}",
+	"routes": "{{{routes}}}",
+	"middlewares": "{{{middlewares}}}",
+	"header": {
+		"html": "Login\n\t<%= html %>",
+		"components": "Login: require('../login/component.vue'),\n\t\t<%= components %>"
+	}
+}

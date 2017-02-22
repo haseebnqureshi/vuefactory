@@ -1,0 +1,12 @@
+{
+	"config": "{{{config}}}",
+	"deps": "var register = require('./register');\n{{{deps}}}",
+	"configuring": "{{{configuring}}}",
+	"stores": "{{{stores}}}",
+	"routes": "{{{routes}}}",
+	"middlewares": "{{{middlewares}}}",
+	"header": {
+		"html": "Register\n\t<%= html %>",
+		"components": "Register: require('../register/component.vue'),\n\t\t<%= components %>"
+	}
+}

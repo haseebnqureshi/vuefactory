@@ -10,7 +10,7 @@ var VueRouter = require('vue-router');
 var VueResource = require('vue-resource');
 var Vuex = require('vuex');
 var _ = require('underscore');
-var home = require('./home');
+var homePage = require('./home-page');
 var header = require('./header');
 var footer = require('./footer');
 {{{deps}}}
@@ -27,12 +27,12 @@ var stores = {};
 
 // routes
 var routes = [];
-routes = _.extend(routes, home.routes);
+routes = _.extend(routes, homePage.routes);
 {{{routes}}}
 
 // middlewares
 var middlewares = [];
-middlewares = _.extend(middlewares, home.middlewares);
+middlewares = _.extend(middlewares, homePage.middlewares);
 {{{middlewares}}}
 
 // creating single vuex store
