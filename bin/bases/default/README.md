@@ -3,6 +3,11 @@
 ### Getting Started
 Simply```npm start``` and it'll automatically launch your web browser, showing your super-basic vue application.
 
+### API
+Some of the components that you've selected may need an API to, for example, handle user authentication, login and registration. We've made that easy for you with API Works, another NPM package that we've crafted. 
+
+Simply ```npm install apiworks -g``` and run ```apiworks``` in your terminal. Answer the prompts, and you'll have a ready-to-go API in seconds.
+
 ### Vue Components
 For better readability and organization, we're using ```.vue``` files to define our Vue Components. What's great about our ```.vue``` files, is that they encapsulate our html, localized css, and relevant scripting around that one component.
 
