@@ -2,8 +2,6 @@
 <template lang="pug">
 
 div.bordered
-	p
-		strong Login
 	div(v-show="!actions.forgot")
 		input(type="text", v-model="user.username", placeholder="username")
 		input(type="password", v-model="user.password", placeholder="password")
