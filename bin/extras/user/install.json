@@ -1,0 +1,8 @@
+{
+	"config": "{{{config}}}",
+	"deps": "var user = require('./user');\n{{{deps}}}",
+	"configuring": "{{{configuring}}}",
+	"stores": "{{{stores}}}",
+	"routes": "routes = _.union(routes, user.routes);\n{{{routes}}}",
+	"middlewares": "middlewares = _.union(middlewares, user.middlewares);\n{{{middlewares}}}"
+}

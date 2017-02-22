@@ -54,7 +54,7 @@ module.exports = {
 	renderExtra: function(name, from, to) {
 
 		//adding our necessary main entry file hooks for our extra
-		var filepath = `${to}/index.js`;
+		var filepath = `${to}/main.js`;
 		var data = require(`${to}/${name}/install.json`);
 		return this.render(filepath, data);
 	}

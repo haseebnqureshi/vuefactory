@@ -90,7 +90,8 @@ inquirer.prompt(questions).then((answers) => {
 			// 		break;
 			// }
 
-			actions.addExtra(extraName, dirpath, process.env.PWD);
+			var targetpath = path.resolve(process.env.PWD, 'vue');
+			actions.addExtra(extraName, dirpath, targetpath);
 			installedExtras[extraName] = true;
 		}
 	});
