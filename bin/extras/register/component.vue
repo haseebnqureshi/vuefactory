@@ -16,6 +16,8 @@ div.bordered
 
 <script>
 
+var lib = require('../lib');
+
 module.exports = {
 	data() {
 		return {
