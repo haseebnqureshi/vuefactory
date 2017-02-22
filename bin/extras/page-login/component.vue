@@ -4,7 +4,7 @@
 div.bordered
 	Header
 
-	h3 User Login
+	h2 User Login
 	div(v-show="!actions.forgot")
 		input(type="text", v-model="user.username", placeholder="username")
 		input(type="password", v-model="user.password", placeholder="password")
