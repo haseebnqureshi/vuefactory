@@ -1,8 +1,8 @@
 {
 	"config": "{{{config}}}",
-	"deps": "var pageLogin = require('./page-login');\n{{{deps}}}",
+	"deps": "var loginPage = require('./login-page');\n{{{deps}}}",
 	"configuring": "{{{configuring}}}",
 	"stores": "{{{stores}}}",
-	"routes": "routes = _.union(routes, pageLogin.routes);\n{{{routes}}}",
-	"middlewares": "middlewares = _.union(middlewares, pageLogin.middlewares);\n{{{middlewares}}}"
+	"routes": "routes = _.union(routes, loginPage.routes);\n{{{routes}}}",
+	"middlewares": "middlewares = _.union(middlewares, loginPage.middlewares);\n{{{middlewares}}}"
 }

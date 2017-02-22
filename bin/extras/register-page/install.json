@@ -1,8 +1,8 @@
 {
 	"config": "{{{config}}}",
-	"deps": "var pageRegister = require('./page-register');\n{{{deps}}}",
+	"deps": "var registerPage = require('./register-page');\n{{{deps}}}",
 	"configuring": "{{{configuring}}}",
 	"stores": "{{{stores}}}",
-	"routes": "routes = _.union(routes, pageRegister.routes);\n{{{routes}}}",
-	"middlewares": "middlewares = _.union(middlewares, pageRegister.middlewares);\n{{{middlewares}}}"
+	"routes": "routes = _.union(routes, registerPage.routes);\n{{{routes}}}",
+	"middlewares": "middlewares = _.union(middlewares, registerPage.middlewares);\n{{{middlewares}}}"
 }
