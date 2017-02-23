@@ -50,7 +50,7 @@ module.exports = {
 					password: this.user.password
 				},
 				success: res => {
-					cookies.set(lib.config.USER_AUTH_API_TOKEN, res.data.accessToken);
+					lib.cookies.set(lib.config.USER_AUTH_API_TOKEN, res.data.accessToken);
 					this.$router.push({ name: 'user' });
 				},
 				error: xhr => {
