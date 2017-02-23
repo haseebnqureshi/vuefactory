@@ -1,6 +1,6 @@
 {
   "name": "vuefactory",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "REPL for cranking out Vue apps.",
   "main": "bin/index.js",
   "bin": {
