@@ -11,6 +11,7 @@ Vuex Store
 ==============*/
 
 var store = module.exports.store = {};
+store.user = require('./store.js');
 
 
 /*==============

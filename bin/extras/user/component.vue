@@ -13,37 +13,24 @@ var lib = require('../lib');
 module.exports = {
 	data() {
 		return {
-			user: {
-				username: 'username'
-			}
+
+		}
+	},
+	computed: {
+		user() {
+			return this.$store.getters.getUser
 		}
 	},
 	created() {
-		this.getUser();
+		this.fetchUser();
 	},
 	watch: {
-		'$route': 'getUser'
+		'$route': 'fetchUser'
 	},
 	methods: {
-		getUser() {
-			var headers = {};
-			headers[lib.config.USER_AUTH_API_TOKEN_HEADER] = lib.cookies.get(lib.config.USER_AUTH_API_TOKEN);
-
-			lib.$.ajax({
-				url: lib.config.API_ENDPOINT + '/user',
-				type: 'get',
-				headers: headers,
-				success: res => {
-					console.log(res);
-					this.user = res.data;
-				},
-				error: xhr => {
-
-				}
-			});
-
+		fetchUser() {
+			this.$store.dispatch('fetchUser');
 		}
-
 	}
 }
 
