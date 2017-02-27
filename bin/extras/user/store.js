@@ -34,14 +34,12 @@ synchronously.
 var mutations = {
 
 	fetch: function(state) {
-
-		var headers = {};
-		headers[lib.config.USER_AUTH_API_TOKEN_HEADER] = lib.cookies.get(lib.config.USER_AUTH_API_TOKEN);
-
-		lib.$.ajax({
-			url: lib.config.API_ENDPOINT + '/user',
-			type: 'get',
-			headers: headers,
+		lib.ajax.get({
+			resource: '/user',
+			cookieHeaders: {
+				cookieName: lib.config.USER_AUTH_API_TOKEN,
+				headerName: lib.config.USER_AUTH_API_TOKEN_HEADER
+			},
 			success: res => {
 				console.log(res);
 				state.data = res.data;
@@ -50,7 +48,6 @@ var mutations = {
 				state.data = {};
 			}
 		});
-
 	},
 
 	save: function(state, payload) {
