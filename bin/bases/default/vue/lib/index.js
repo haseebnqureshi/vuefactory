@@ -66,7 +66,9 @@ var ajax = {
 		},
 		run: function(options) {
 			var options = options || {};
-			if (!this.shouldRun(options)) { return; }
+			if (options.type === 'get') {
+				if (!this.shouldRun(options)) { return; }
+			}
 			return $.ajax(options);
 		},
 		saveIntoCache: function(url) {
