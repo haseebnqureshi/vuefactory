@@ -14,5 +14,8 @@ REPL for cranking out Vue apps.
 ### NPM Module
 We've shoved all of this into an easy-to-manage NPM package. This makes way more sense as a REPL CLI tool, helping you to quickly scaffold your next Vue application with powerful out-of-the-box addons.
 
+### Notes
+Right now, install all of the extras! Just to get through our initial modules, we're not worrying about dependency concerns between sibling extras right now.
+
 Happy coding!
 HQ
