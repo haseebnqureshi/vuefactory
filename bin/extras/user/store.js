@@ -52,6 +52,20 @@ var mutations = {
 
 	save: function(state, payload) {
 		state.data = lib._.extend(state.data, payload || {});
+		lib.ajax.put({
+			resource: '/user',
+			data: payload || {},
+			cookieHeaders: {
+				cookieName: lib.config.USER_AUTH_API_TOKEN,
+				headerName: lib.config.USER_AUTH_API_TOKEN_HEADER
+			},
+			success: res => {
+				console.log('saved', res);
+			},
+			error: xhr => {
+
+			}
+		})
 	}
 
 };

@@ -1,0 +1,8 @@
+{
+	"config": "{{{config}}}",
+	"deps": "var userProfile = require('./user-profile');\n{{{deps}}}",
+	"configuring": "{{{configuring}}}",
+	"stores": "{{{stores}}}",
+	"routes": "{{{routes}}}",
+	"middlewares": "{{{middlewares}}}"
+}

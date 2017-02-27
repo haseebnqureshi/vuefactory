@@ -4,6 +4,8 @@
 div.bordered
 	h3 User Dash 
 	p Nice to see you today, {{user.username}}!
+	
+	UserProfile
 </template>
 
 <script>
@@ -15,6 +17,9 @@ module.exports = {
 		return {
 
 		}
+	},
+	components: {
+		UserProfile: require('../user-profile/component.vue')
 	},
 	computed: {
 		user() {
